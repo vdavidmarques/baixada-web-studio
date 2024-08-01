@@ -1,0 +1,11 @@
+.contact{
+    padding: 6.25rem 0;
+    background-color: $blue-dark;
+    color: $white;
+
+    .title{
+        @include heading-title-2xl;
+        margin-bottom: 6.25rem;
+        text-align: center;
+    }
+}

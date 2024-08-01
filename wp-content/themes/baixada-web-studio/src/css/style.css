@@ -225,13 +225,13 @@ body {
   font-size: 1rem;
   line-height: 1.875rem;
   overflow-x: hidden;
-  color: #0b3453;
+  color: #175c91;
 }
 
 a {
   text-decoration: none;
   text-decoration-skip-ink: auto;
-  color: #0b3453;
+  color: #175c91;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -252,7 +252,7 @@ a[href^=tel] {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 0 16px;
+  padding: 0 1rem;
   width: 100%;
 }
 @media screen and (min-width: 640px) {
@@ -273,11 +273,10 @@ a[href^=tel] {
 }
 @media screen and (min-width: 1280px) {
   .container {
-    padding: 0;
     max-width: 1280px;
   }
 }
-@media screen and (min-width: 1536px) {
+@media screen and (min-width: 1440px) {
   .container {
     max-width: 1536px;
   }
@@ -374,7 +373,7 @@ img {
 }
 
 .blue-dark {
-  color: #0b3453;
+  color: #175c91;
 }
 
 .uppercase {
@@ -429,7 +428,7 @@ img {
 }
 
 .button-second {
-  background-color: #0b3453;
+  background-color: #175c91;
   color: #fff;
 }
 .button-second:hover {
@@ -439,7 +438,7 @@ img {
 
 .button-default {
   background-color: #fff;
-  color: #0b3453;
+  color: #175c91;
 }
 .button-default:hover {
   background-color: #9BABAB;
@@ -461,7 +460,7 @@ img {
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
   line-height: 1.875rem;
-  color: #0b3453;
+  color: #175c91;
 }
 @media screen and (min-width: 1024px) {
   .post-not-found .entry-title {
@@ -495,6 +494,7 @@ img {
 .header-menu-itens {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: relative;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -502,12 +502,13 @@ img {
 @media screen and (min-width: 1024px) {
   .header-menu-itens {
     column-gap: 1.5rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .header-menu-itens {
+    justify-content: inherit;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     column-gap: 3.5rem;
   }
 }
@@ -517,6 +518,8 @@ img {
   font-family: "Rubik", sans-serif;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  line-height: 2.5rem;
+  font-size: 1.875rem;
 }
 @media screen and (min-width: 1024px) {
   .header-menu-itens .logo {
@@ -535,7 +538,7 @@ img {
   text-transform: uppercase;
   font-family: "Rubik", sans-serif;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .header-menu-itens .menu-items {
     position: relative;
     display: flex;
@@ -623,13 +626,9 @@ img {
   }
 }
 .header-menu-itens .open-menu-mobile .bg-menu-mobile {
-  position: absolute;
-  top: 1.25rem;
-  right: 1rem;
   background: url("../../library/icons/menu-icon.svg");
-  transform: translateY(1.5rem);
-  width: 2.0625rem;
-  height: 1.3125rem;
+  width: auto;
+  height: 2.5rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -638,14 +637,19 @@ img {
   text-indent: -624.9375rem;
   border: none;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .header-menu-itens .open-menu-mobile .bg-menu-mobile {
     display: none;
   }
 }
 
-footer {
-  padding-bottom: 1.25rem;
+footer .after-footer-bg {
+  background-color: #175c91;
+  color: #fff;
+  padding: 10px;
+}
+footer .after-footer-bg a {
+  color: #fff;
 }
 footer .after-footer {
   font-size: 0.75rem;
@@ -779,14 +783,41 @@ footer .scroll-to-top-btn {
   color: #fff;
   position: absolute;
   top: 0;
-  left: 2.5rem;
+  left: 0;
   z-index: 10;
   justify-content: center;
+  right: 0;
 }
 
+.banners .default-heading-title {
+  padding: 0 1rem;
+}
+@media screen and (min-width: 640px) {
+  .banners .default-heading-title {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .banners .default-heading-title {
+    max-width: 48rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .banners .default-heading-title {
-    max-width: 49.75rem;
+    padding: 0 2.5rem;
+    max-width: 64rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .banners .default-heading-title {
+    max-width: 80rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .banners .default-heading-title {
+    max-width: 96rem;
   }
 }
 .banners .default-heading-title h1, .banners .default-heading-title h2 {
@@ -954,7 +985,7 @@ footer .scroll-to-top-btn {
   }
 }
 .about .blue-bg {
-  background-color: #0b3453;
+  background-color: #175c91;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -979,7 +1010,7 @@ footer .scroll-to-top-btn {
 }
 .about .content {
   grid-column: span 12/span 12;
-  background-color: #0b3453;
+  background-color: #175c91;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -1062,10 +1093,10 @@ footer .scroll-to-top-btn {
   text-align: center;
 }
 .benefits .lists .list .icon {
-  background-color: #0b3453;
+  background-color: #175c91;
   width: 7.6875rem;
   height: 7.6875rem;
-  border-radius: 9999px;
+  border-radius: 99999px;
   margin-bottom: 1.875rem;
   margin-left: auto;
   margin-right: auto;
@@ -1084,7 +1115,7 @@ footer .scroll-to-top-btn {
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
   line-height: 1.875rem;
-  color: #0b3453;
+  color: #175c91;
   margin-bottom: 1.25rem;
 }
 @media screen and (min-width: 1024px) {
@@ -1096,7 +1127,7 @@ footer .scroll-to-top-btn {
 .offer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #0b3453;
+  background-color: #175c91;
   color: #fff;
 }
 @media screen and (min-width: 1024px) {
@@ -1140,7 +1171,7 @@ footer .scroll-to-top-btn {
 .offer .packages .package {
   text-align: center;
   background-color: #fff;
-  color: #0b3453;
+  color: #175c91;
   padding: 2.5rem 1.25rem;
   border-radius: 0.625rem;
   position: relative;
@@ -1150,7 +1181,7 @@ footer .scroll-to-top-btn {
   font-weight: bold;
   font-family: "Rubik", sans-serif;
   font-size: 1.875rem;
-  color: #0b3453;
+  color: #175c91;
   margin-bottom: 1.25rem;
 }
 .offer .packages .package .options {
@@ -1175,7 +1206,154 @@ footer .scroll-to-top-btn {
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
   line-height: 1.875rem;
-  color: #0b3453;
+  color: #175c91;
+}
+
+.hiring {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media screen and (min-width: 1024px) {
+  .hiring {
+    padding-top: 9.375rem;
+    padding-bottom: 9.375rem;
+  }
+}
+.hiring .title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 1024px) {
+  .hiring .title {
+    margin-bottom: 6.25rem;
+  }
+}
+.hiring .title h1, .hiring .title h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 0.625rem;
+}
+@media screen and (min-width: 1024px) {
+  .hiring .title h1, .hiring .title h2 {
+    font-size: 3.4375rem;
+    text-indent: -1px;
+    line-height: 3.5rem;
+  }
+}
+.hiring .title h3, .hiring .title h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+@media screen and (min-width: 1024px) {
+  .hiring .title h3, .hiring .title h4 {
+    font-size: 40px;
+  }
+}
+.hiring .lists {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  row-gap: 2.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .hiring .lists {
+    column-gap: 5rem;
+    row-gap: 0;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.hiring .lists .list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hiring .lists .list.list-3::after {
+  content: none;
+}
+@media screen and (min-width: 1024px) {
+  .hiring .lists .list::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../library/icons/arrow-right.svg");
+    right: -2.5rem;
+    top: 0;
+    width: 1.875rem;
+    height: 20.5625rem;
+    transform: translateY(50%);
+    background-size: 1.5625rem;
+    background-repeat: no-repeat;
+  }
+}
+.hiring .lists .list .icon {
+  background-color: #175c91;
+  border-radius: 99999px;
+  width: 7.6875rem;
+  height: 7.6875rem;
+  margin-bottom: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hiring .lists .list .icon img {
+  width: 4.375rem;
+  height: 4.375rem;
+  object-fit: contain;
+}
+.hiring .content, .hiring .text {
+  text-align: center;
+}
+.hiring .content h1, .hiring .content h2, .hiring .content h3, .hiring .content h4, .hiring .text h1, .hiring .text h2, .hiring .text h3, .hiring .text h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  line-height: 1.875rem;
+}
+@media screen and (min-width: 1024px) {
+  .hiring .content h1, .hiring .content h2, .hiring .content h3, .hiring .content h4, .hiring .text h1, .hiring .text h2, .hiring .text h3, .hiring .text h4 {
+    font-size: 1.25rem;
+  }
+}
+.hiring .text {
+  margin-top: 5.9375rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.625rem;
+}
+@media screen and (min-width: 1024px) {
+  .hiring .text {
+    max-width: 43.75rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.contact {
+  padding: 6.25rem 0;
+  background-color: #175c91;
+  color: #fff;
+}
+.contact .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 6.25rem;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .contact .title {
+    font-size: 3.4375rem;
+    text-indent: -1px;
+    line-height: 3.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

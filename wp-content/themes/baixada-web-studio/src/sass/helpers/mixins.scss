@@ -9,31 +9,37 @@
   margin-right: auto;
 }
 
-@mixin text-xs {//12px
+@mixin text-xs {
+  //12px
   font-size: 0.75rem;
   line-height: 1.25rem;
 }
 
-@mixin text-sm {//14px
+@mixin text-sm {
+  //14px
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-@mixin text-base {//16px
+@mixin text-base {
+  //16px
   font-size: 1rem;
   line-height: 1.875rem;
 }
 
-@mixin text-lg {//18px
+@mixin text-lg {
+  //18px
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-@mixin text-xl {//20px
+@mixin text-xl {
+  //20px
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
-@mixin text-4xl {//36px
+@mixin text-4xl {
+  //36px
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
@@ -56,17 +62,20 @@
   @include font-rubik;
 }
 
-@mixin heading-title-sm {//14px
+@mixin heading-title-sm {
+  //14px
   @include text-sm;
   @include heading-titles;
 }
 
-@mixin heading-title-md {//16px
+@mixin heading-title-md {
+  //16px
   @include heading-titles;
   @include text-base;
 }
 
-@mixin heading-title-lg {//16px e 20px
+@mixin heading-title-lg {
+  //16px e 20px
   @include heading-titles;
   @include text-base;
   @media screen and (min-width: $breakpoint-lg) {
@@ -74,7 +83,8 @@
   }
 }
 
-@mixin heading-title-xl {//20px e 40px
+@mixin heading-title-xl {
+  //20px e 40px
   @include heading-titles;
   @include text-xl;
   @media screen and (min-width: $breakpoint-lg) {
@@ -82,7 +92,8 @@
   }
 }
 
-@mixin heading-title-2xl {//36px e 55px
+@mixin heading-title-2xl {
+  //36px e 55px
   @include heading-titles;
   @include text-4xl;
   @media screen and (min-width: $breakpoint-lg) {
@@ -129,6 +140,10 @@
 
 @mixin grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@mixin grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 @mixin grid-cols-12 {
@@ -211,23 +226,28 @@
   grid-column-start: 12;
 }
 
-@mixin mx-auto{
+@mixin mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-
-@mixin anime-bounce{
+@mixin anime-bounce {
   animation: bounce 1s infinite;
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-  50% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
   }
 }
+
+@mixin rounded-full{
+  border-radius: 99999px;
 }
+

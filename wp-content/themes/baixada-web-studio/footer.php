@@ -42,14 +42,16 @@
                 Subir para o topo
             </button>
         <?php endwhile; ?>
-        <div class="container after-footer">
-            <div id="copyright" itemprop="copyrightHolder">
-                &copy; <?php echo esc_html(date_i18n(__('Y', 'blankslate'))); ?> <?php echo esc_html(get_bloginfo('name')); ?>
-            </div>
-            <a href="https://www.behance.net/viniciusdavidmarques" target="_blank" class="designer">
-                By Vinícius Marques
-            </a>
         </div>
+        <div class="after-footer-bg">
+            <div class="container after-footer">
+                <div id="copyright" itemprop="copyrightHolder">
+                    &copy; <?php echo esc_html(date_i18n(__('Y', 'blankslate'))); ?> <?php echo esc_html(get_bloginfo('name')); ?>
+                </div>
+                <a href="https://www.behance.net/viniciusdavidmarques" target="_blank" class="designer">
+                    By Vinícius Marques
+                </a>
+            </div>
         </div>
     </footer>
     <?php wp_footer(); ?>

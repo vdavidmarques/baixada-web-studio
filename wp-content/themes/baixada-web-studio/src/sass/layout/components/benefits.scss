@@ -42,7 +42,7 @@
                 background-color: $blue-dark;;
                 width: 7.6875rem;
                 height: 7.6875rem;
-                border-radius: 9999px;
+                @include rounded-full;
                 margin-bottom: 1.875rem;
                 margin-left: auto;
                 margin-right: auto;

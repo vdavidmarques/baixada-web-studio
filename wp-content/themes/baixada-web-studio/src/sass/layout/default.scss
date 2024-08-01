@@ -192,28 +192,27 @@ a[href^="tel"] {
 
 .container {
   @include mx-auto;
-  padding: 0 16px;
+  padding: 0 1rem;
   @include w-full;
 
   @media screen and (min-width: $breakpoint-sm) {
-    max-width: 640px;
+    max-width:  $breakpoint-sm;
   }
 
   @media screen and (min-width: $breakpoint-md) {
-    max-width: 768px;
+    max-width: $breakpoint-md;
   }
 
   @media screen and (min-width: $breakpoint-lg) {
     padding: 0 2.5rem;
-    max-width: 1024px;
+    max-width: $breakpoint-lg;
   }
   @media screen and (min-width: $breakpoint-xl) {
-    padding: 0;
-    max-width: 1280px;
+    max-width: $breakpoint-xl;
   }
 
-  @media screen and (min-width: $breakpoint-2xl) {
-    max-width: 1536px;
+  @media screen and (min-width: $breakpoint-1_5xl) {
+    max-width: $breakpoint-2xl;
   }
 }
 

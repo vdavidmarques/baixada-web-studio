@@ -14,12 +14,12 @@
 
         /*******************************
         Adding the Options Page in Admin Menu
-        Should change PAGE ID  to the new one (post.php?post=8)
+        Should change PAGE ID  to the new one (post.php?post=8), but someting change ID not works, so u should change at mysql
         ********************************/
 
         add_action('admin_menu', 'linked_url');
         function linked_url() {
-            add_menu_page('linked_url','Informações Gerais','read','post.php?post=8&action=edit','', 'dashicons-admin-generic',  130);
+            add_menu_page('linked_url','Informações Gerais','read','post.php?post=87&action=edit','', 'dashicons-admin-generic',  130);
         }
 
         /*******************************

@@ -4,8 +4,29 @@
 .banners{
     
     .default-heading-title {
+        padding: 0 1rem;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            max-width: 40rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            max-width: 48rem;
+        }
+
         @media screen and (min-width: $breakpoint-lg) {
-            max-width: 49.75rem;
+            padding: 0 2.5rem;
+            max-width: 64rem;
+        }
+
+        @media screen and (min-width: $breakpoint-xl) {
+            max-width: 80rem;
+        }
+    
+        @media screen and (min-width: $breakpoint-2xl) {
+            max-width: 96rem;
         }
 
         h1, h2{

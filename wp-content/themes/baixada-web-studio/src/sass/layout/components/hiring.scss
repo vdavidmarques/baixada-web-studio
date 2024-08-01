@@ -1,0 +1,106 @@
+@import '../../helpers/variables.scss';
+@import '../../helpers/mixins.scss';
+
+.hiring{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    @media screen and (min-width: $breakpoint-lg) {
+        padding-top: 9.375rem;
+        padding-bottom: 9.375rem;
+    }
+
+    .title{
+        text-align: center;
+        margin-bottom: 5rem;
+
+        @media screen and (min-width: $breakpoint-lg) {
+            margin-bottom: 6.25rem;
+        }
+
+        h1,h2{
+            @include heading-title-2xl;
+            margin-bottom: 0.625rem;
+        }
+        h3,h4{
+            @include heading-title-xl;
+        }
+    }
+
+    .lists{
+        display: grid;
+        @include grid-cols-1;
+        row-gap: 2.5rem;
+        
+        @media screen and (min-width: $breakpoint-lg) {
+            column-gap: 5rem;
+            row-gap: 0;
+            @include grid-cols-4;
+        }
+
+        .list{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &.list-3::after{
+                content: none;
+            }
+            
+            @media screen and (min-width: $breakpoint-lg) {
+                &::after{
+                    content: '';
+                    position: absolute;
+                    background-image: url("../../library/icons/arrow-right.svg");
+                    right: -2.5rem;
+                    top: 0;
+                    width: 1.875rem;
+                    height: 20.5625rem;
+                    transform: translateY(50%);
+                    background-size: 1.5625rem;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .icon{
+                background-color: $blue-dark;
+                @include rounded-full;
+                width: 7.6875rem;
+                height: 7.6875rem;
+                margin-bottom: 3.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                    width: 4.375rem;
+                    height: 4.375rem;
+                    object-fit: contain;
+                }
+            }
+
+            
+        }
+    }
+
+    .content, .text{
+        text-align: center;
+        h1,h2, h3,h4{ 
+            @include heading-title-lg;
+        }
+    }
+
+    .text{
+        margin-top: 5.9375rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.625rem;
+        
+        @media screen and (min-width: $breakpoint-lg) {
+            max-width: 43.75rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

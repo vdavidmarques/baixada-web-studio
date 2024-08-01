@@ -4,22 +4,26 @@
 .header-menu-itens{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     
     @media screen and (min-width: $breakpoint-lg) {
         column-gap: 1.5rem;
+    }
+    
+    @media screen and (min-width: $breakpoint-xl) {
+        justify-content: inherit;
         padding-top: 5rem;
         padding-bottom: 5rem;
-    }
-
-    @media screen and (min-width: $breakpoint-xl) {
         column-gap: 3.5rem;
     }
 
     .logo{
         @include heading-title-xl;
+        line-height: 2.5rem;
+        font-size: 1.875rem;
     }
 
     .menu-items{
@@ -34,7 +38,7 @@
         text-transform: uppercase;
         @include font-rubik;
 
-        @media screen and (min-width: $breakpoint-lg) {
+        @media screen and (min-width: $breakpoint-xl) {
             position: relative;
             display: flex;
             justify-content: end;
@@ -109,16 +113,12 @@
     .open-menu-mobile{
                 
         .bg-menu-mobile{         
-            position: absolute;
-            top: 1.25rem;
-            right: 1rem;
             background: url("../../library/icons/menu-icon.svg");
-            transform: translateY(1.5rem);
-            width: 2.0625rem;
-            height: 1.3125rem;
+            width: auto;
+            height: 2.5rem;
             @include btn-menu-mobile;
 
-            @media screen and (min-width: $breakpoint-lg) {
+            @media screen and (min-width: $breakpoint-xl) {
                 display: none;
             }
         }

@@ -29,6 +29,8 @@
             <?php include 'components/about.php'; ?>
             <?php include 'components/benefits.php'; ?>
             <?php include 'components/offer.php'; ?>
+            <?php include 'components/hiring.php'; ?>
+            <?php /*include 'components/contact.php';*/ ?>
             </div>
             <?php endwhile;
         endif; ?>

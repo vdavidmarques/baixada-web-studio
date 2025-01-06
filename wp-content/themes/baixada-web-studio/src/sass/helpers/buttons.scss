@@ -15,6 +15,7 @@
   text-transform: uppercase;
   font-weight: bold;
   font-family: $font-rubik;
+  @include transition-colors;
   
   @media screen and (min-width: $breakpoint-lg) {
     text-transform: uppercase;

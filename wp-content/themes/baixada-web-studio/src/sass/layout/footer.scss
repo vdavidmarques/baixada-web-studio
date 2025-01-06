@@ -1,0 +1,135 @@
+@import "../helpers/variables.scss";
+@import "../helpers/mixins.scss";
+
+footer {
+  @media screen and (min-width: $breakpoint-lg) {
+    margin-top: 6.25rem;
+  }
+
+  .after-footer-bg {
+    background-color: $blue;
+    color: $white;
+    padding: 0.625rem;
+    
+    a {
+      color: $white;
+    }
+
+    .after-footer {
+      font-size: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      
+      @media screen and (min-width: $breakpoint-lg) {
+        flex-direction: row;
+      }
+    }
+  }
+
+
+  .about-me-footer  {
+    display: grid;
+    row-gap: 1.25rem;
+    padding-bottom: 5rem;
+    
+    @media screen and (min-width: $breakpoint-lg) {
+      column-gap: 2.5rem;
+      row-gap: 1.25rem;
+    }
+
+    @include grid-cols-12;
+    color: $blue-dark;
+    
+    .content{
+      @include col-span-12;
+      color: $blue;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.25rem;
+
+      @media screen and (min-width: $breakpoint-lg) {
+        @include col-span-6;
+      }
+
+      .subtitle{
+        text-transform: uppercase;
+        font-weight: 900;
+        font-family: $font-rubik;
+        font-size: 1.125rem;
+        line-height: 1.875rem;
+      }
+
+      .social-networks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 1.25rem;
+      
+        img {
+          width: 2.5rem;
+          height: 2.5rem;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .form{
+      @include col-span-12;
+      @media screen and (min-width: $breakpoint-lg) {
+        @include col-span-6;
+      }
+
+      button{
+        border: inherit;
+        min-width: 9.375rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  .wpp-float {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+    position: fixed;
+    z-index: 50;
+    animation: bounce 1s infinite;
+    bottom: 100px;
+    right: 1.25rem;
+    
+    @media screen and (min-width: $breakpoint-lg) {
+      right: 2.5rem;
+      bottom: 9.375rem;
+    }
+  }
+  
+  .scroll-to-top-btn {
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+    padding-left: 1.5rem;
+    text-indent: -624.9375rem;
+    border: none;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 1.875rem;
+    background: url("../../dist/icons/up-arrow.svg");
+    width: 1.875rem;
+    height: 1.875rem;
+    object-fit: contain;
+    z-index: 50;
+  
+    @media screen and (min-width: $breakpoint-lg) {
+      right: 2.5rem;
+      bottom: 5rem;
+    }
+  }
+}
+
+
+

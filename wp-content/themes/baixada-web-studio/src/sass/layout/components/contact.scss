@@ -1,0 +1,24 @@
+@import "../../helpers/variables.scss";
+@import "../../helpers/mixins.scss";
+
+.contact {
+  padding: 6.25rem 0;
+  background-color: $blue;
+  color: $white;
+
+  .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $font-rubik;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-bottom: 6.25rem;
+    text-align: center;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: 3.4375rem;
+      text-indent: -1px;
+      line-height: 3.5rem;
+    }
+  }
+}

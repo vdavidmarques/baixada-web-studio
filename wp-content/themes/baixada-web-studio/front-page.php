@@ -7,5 +7,4 @@
     include 'components/offer.php';
     include 'components/works.php';
     include 'components/about.php';
-    include 'components/news.php';
     get_footer();

@@ -1,0 +1,15 @@
+@import "../../helpers/variables.scss";
+@import "../../helpers/mixins.scss";
+
+
+.works.depositions{
+    .lists{
+        .list{
+            .text{
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+                padding-bottom: 2.5rem;
+            }
+        }
+    }
+}

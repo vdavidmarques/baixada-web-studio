@@ -56,6 +56,6 @@
                 </div>
             </div>
         </div>
-        <div class="waves wave-1b"></div>
     </div>
+    <div class="waves wave-1b"></div>
 </section>
